@@ -4,7 +4,7 @@ import {Image as IImage} from 'sanity'
 import { urlForImage } from '../../../../sanity/lib/image'
 import Image from "next/image"
 
-export const getCubeData = async () => {
+const getCubeData = async () => {
   const response = await client.fetch(`*
   [_type=="Qiyi"|| _type=="Gan" || _type=="Moyu"]{
     title,
