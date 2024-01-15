@@ -9,8 +9,7 @@ const getCubeData = async () => {
   [ _type=="Qiyi"]{
     title,
       price,
-      image,
-      company
+      image
   }`)
   return response
 }
