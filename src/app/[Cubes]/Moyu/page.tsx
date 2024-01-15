@@ -8,8 +8,7 @@ const getCubeData = async () => {
   const response = await client.fetch(`*[_type=="Moyu"]{
     title,
       price,
-      image,
-      company
+      image
   }`)
   return response
 }
