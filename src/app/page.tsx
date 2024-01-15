@@ -4,6 +4,7 @@ import { BiCubeAlt } from 'react-icons/bi'
 import Logo from '../../public/Images/Logo.png'
 
 
+
 let ST = 1499.99
 
 export default function Home() {
