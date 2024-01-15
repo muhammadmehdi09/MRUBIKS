@@ -9,8 +9,7 @@ const getCubeData = async () => {
   [ _type=="Gan"]{
     title,
       price,
-      image,
-      company
+      image
   }`)
   return response
 }
