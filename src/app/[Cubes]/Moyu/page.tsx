@@ -5,7 +5,17 @@ import { urlForImage } from '../../../../sanity/lib/image'
 import Image from "next/image"
 
 const getCubeData = async () => {
-  const response = await client.fetch(`*[_type=="Moyu"]{
+  const response = await client.fetch(`*
+  [_type=="Moyu" && _id == "22601829-13af-4f4b-a4e1-e9bffc766a8b" || 
+   _type=="Moyu" && _id == "463e779d-4117-4ac1-aa56-5441dbacd043" || 
+   _type=="Moyu" && _id == "4b19320c-5aa3-4aaa-9974-9e0952cff89f" || 
+   _type=="Moyu" && _id == "5aa94616-6c24-4d32-b0dc-f5f07615c279" ||
+   _type=="Moyu" && _id == "4f28eca8-6a2a-401a-a321-9410737062a1" ||
+   _type=="Moyu" && _id == "80484119-7b3b-492b-8138-7d6e7108d15f" ||
+   _type=="Moyu" && _id == "8b6b6090-d8cb-451d-83bd-b6f7ba726d01" ||
+   _type=="Moyu" && _id == "ae6dc312-2ec7-4c1d-b05f-d06ac0f66678" ||
+   _type=="Moyu" && _id == "90bb0dc3-663d-43a4-9a0f-e9eb174a5a66"
+]{
     title,
       price,
       image,
