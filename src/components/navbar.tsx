@@ -19,7 +19,7 @@ const Navbar = () => {
               <li><a href='/Cubes/All_Cubes'>All Cubes</a></li>
             </ul>
           </div>
-          <a href='http://localhost:3000/'>
+          <a href='https://mrubiks-main.vercel.app/'>
             <Image src={require("../../public//Images/Logo.png")} alt='Logo' width={75} height={75}  className='hidden lg:block' />
           </a>
         </div>

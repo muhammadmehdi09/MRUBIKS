@@ -4,8 +4,8 @@ import { createClient } from 'next-sanity'
 
 export const client = createClient({
     apiVersion: "2023-08-04",
-    dataset: "production",
-    projectId: "6vj92eqt",
-    token:"skyGJB3S99hwOQ1lrdZrNh00wI3lW4r8yA3bxXY8BYeQgbMcDqxyAlziP8NzOtbXe5cgGdUUombRuuWSZ0E1RIkBL7hluv8dHvKbjni1Ee0H5VZtcs80pvFjTQi9yHByKuWzERziMEvs8ABV4PPEYMnzI85lKnPylu86MXAIobZwa10EcPC0",
+    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    token: process.env.NEXT_PUBLIC_SANITY_PROJECT_API_TOKEN,
     useCdn: true,
 })

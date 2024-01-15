@@ -6,9 +6,9 @@ import Image from "next/image"
 
 const getcubeData = async () => {
   const response = await client.fetch(`*
-  [_type=="Moyu" && _id == "5c920eea-d38f-40d8-814e-a7d3e17b26e2" || 
-  _type=="Gan" && _id == "85a25401-4ced-4752-9cb1-bac16a090336" || 
-  _type=="Qiyi" && _id =="eb10eb54-c38d-4e38-8bf1-087c93bacdb8"]{
+  [_type=="Moyu" && _id == "5aa94616-6c24-4d32-b0dc-f5f07615c279" || 
+  _type=="Gan" && _id == "e3361d91-c91f-4491-ad1a-28654a1fbb25" || 
+  _type=="Qiyi" && _id =="8f3188be-a47c-4f9c-9190-74e96cbf5e7b"]{
     title,
       price,
       image,
@@ -50,7 +50,7 @@ export default async function BestSelling() {
         {data.map((item) => (
           <>
             <div className="">
-              <a href="cubes/cube_Page">
+              <a href="cubes/Cube_Page">
                 <div className="p-4 text-center items-center border border-gray-300 hover:scale-110 duration-500">
                   <div className="w-350 h-350 inline-flex ">
                     <Image
@@ -66,9 +66,9 @@ export default async function BestSelling() {
                       {item.title}
                     </h2>
                     <h3 className="text-gray-900 text-lg title-font font-medium mb-3">
-                      <span className="text-orange-400">PKR</span> {item.price}
+                      <span className="text-orange-400">$</span> {item.price}
                     </h3>
-                    <a href="/cubes/cube_Page">
+                    <a href="/cubes/Cube_Page">
                       <button className="bg-orange-400 flex py-3 px-5 lg:px-10 2xl:px-16 m-auto text-black hover:bg-cyan-400 hover:text-white rounded-xl duration-200">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
